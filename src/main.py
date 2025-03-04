@@ -1,12 +1,17 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from models import Signin
 import uvicorn
 
 app = FastAPI()
 
-@app.post('/login')
-async def login(payload:Signin):
-    pass
+
+@app.post("/login")
+async def login(payload: Signin):
+    """Handles user login with basic credential check."""
+    if payload.username == "admin" and payload.password == "admin":
+        return {"message": "Login successful"}
+    
+    raise HTTPException(status_code=401, detail="Invalid credentials")
 
 
 
