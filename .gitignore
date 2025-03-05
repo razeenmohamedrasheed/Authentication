@@ -1,0 +1,57 @@
+# Byte-compiled / cached files
+__pycache__/
+*.py[cod]
+*.so
+*.pyo
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Logs and output files
+*.log
+*.out
+*.err
+
+# Environment variables
+.env
+*.env
+
+# Dependencies
+*.lock
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Jupyter notebooks
+.ipynb_checkpoints
+
+# MyPy cache
+.mypy_cache/
+
+# PyTest cache
+.pytest_cache/
+
+# Database files
+*.sqlite3
+*.db
+*.sqlite
+
+# Static and media files (if applicable)
+staticfiles/
+media/
+
+# Docker
+docker-compose.override.yml
